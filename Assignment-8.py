@@ -11,3 +11,10 @@ def nth_fibonacci(n: int) -> int:
     for i in range(2, n):
         lst.append(lst[i - 2] + lst[i - 1])
     return lst[n - 1]
+
+def factorial(n: int) -> int:
+    if n == 0:
+        return 1
+    for i in range (n-1, 0, -1):
+        n *= i
+    return n
