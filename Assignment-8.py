@@ -5,3 +5,9 @@ def is_prime(n: int) -> bool:
         if n % i == 0:
             return False
     return True
+
+def nth_fibonacci(n: int) -> int:
+    lst = [0, 1]
+    for i in range(2, n):
+        lst.append(lst[i - 2] + lst[i - 1])
+    return lst[n - 1]
