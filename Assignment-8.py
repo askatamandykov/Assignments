@@ -18,3 +18,12 @@ def factorial(n: int) -> int:
     for i in range (n-1, 0, -1):
         n *= i
     return n
+
+def count_vowels(s: str) -> int:
+    count = 0
+    for i in s:
+        if i in "aeiou":
+            count += 1
+    return count
+
+
