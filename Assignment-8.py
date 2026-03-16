@@ -33,3 +33,5 @@ def sum_of_digits(n: int) -> int:
         n //= 10
     return sum
 
+def reverse_string(s: str) -> str:
+    return s[::-1]
