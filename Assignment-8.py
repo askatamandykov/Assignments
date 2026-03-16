@@ -26,4 +26,10 @@ def count_vowels(s: str) -> int:
             count += 1
     return count
 
+def sum_of_digits(n: int) -> int:
+    sum = 0
+    for i in range(len(str(n))):
+        sum += n%10
+        n //= 10
+    return sum
 
